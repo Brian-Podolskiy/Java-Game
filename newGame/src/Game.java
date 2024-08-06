@@ -25,17 +25,15 @@ public class Game implements ActionListener{
   int lives = 3;
   int enemySpeed;
   int projectileX;
-  int projectileY;
-  ImageIcon missile = new ImageIcon("C:\\Users\\brian\\source\\repos\\JavaActivities\\gameProject\\n" + 
-        "ewGame\\src\\missile.png"); // code for implementation in VScode
-  ImageIcon img = new ImageIcon("C:\\Users\\brian\\source\\repos\\JavaActivities\\gameProject\\n" + 
-        "ewGame\\src\\spaceship.png");
-  ImageIcon enemy = new ImageIcon("C:\\Users\\brian\\source\\repos\\JavaActivities\\gameProject\\n" + 
-        "ewGame\\src\\enemy.png");
+  int projectileY; 
+
+  ImageIcon missile = new ImageIcon(Game.class.getResource("/missile.png"));
+  ImageIcon img = new ImageIcon(Game.class.getResource("/spaceship.png"));
+  ImageIcon enemy = new ImageIcon(Game.class.getResource("/enemy.png"));
 
   /*ImageIcon img = new ImageIcon("src/main/java/spaceship.png");
   ImageIcon enemy = new ImageIcon("src/main/java/enemy.png");
-  ImageIcon missile = new ImageIcon("src/main/java/missile.png");*/
+  ImageIcon missile = new ImageIcon("src/main/java/missile.png"); old implementation for repl*/
   
   Enemy enemy1;
   Projectile p;
