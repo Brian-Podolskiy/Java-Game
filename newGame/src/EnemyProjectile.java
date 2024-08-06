@@ -5,8 +5,6 @@ import java.util.ArrayList;
 
 public class EnemyProjectile implements ActionListener{
   JLabel eProjectile;
-  //ImageIcon img = new ImageIcon("src/main/java/enemymissile.png");
-  
   ImageIcon img = new ImageIcon(Game.class.getResource("/enemymissile.png"));
 
   Timer t;
